@@ -52,7 +52,7 @@
 </td>
 <td valign="top" width="50%">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Github Events
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Activity
 
 <!-- douban starts -->
 * <a href='' target='_blank'>wait info ...</a> 
