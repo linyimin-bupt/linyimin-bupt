@@ -7,7 +7,7 @@ interface IRepo {
     owner: string;
 }
 
-interface CommitStats {
+export interface CommitStats {
     header: string,
     lines: string[]
 }
