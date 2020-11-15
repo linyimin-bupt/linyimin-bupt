@@ -4,7 +4,7 @@
 
 <table width="100%">
 <tr width="100%">
-<td valign="top" width="500px">
+<td valign="top" width="50%">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/jet-ski.svg' height="20px"> Github Stats
 
@@ -37,7 +37,7 @@
 </td>
 </tr>
 <tr>
-<td valign="top" width="500px">
+<td valign="top" width="50%">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Commit stats
 
