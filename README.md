@@ -9,12 +9,14 @@
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/jet-ski.svg' height="20px"> Github Stats
 
 <!-- github stats starts -->
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
+<pre>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+</pre>
 <!-- github stats ends -->
 
 </td>
@@ -23,11 +25,13 @@
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Most Used Language
 
 <!-- Most Used Language starts -->
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
-* <a href='' target='_blank'>wait info ...</a>
+<pre>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+<a href='' target='_blank'>wait info ...</a>
+</pre>
 <!-- Most Used Language ends -->
 
 </td>
@@ -46,7 +50,6 @@
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Other         0 secs  ███▓░░░░░░░░░░░░░░░░  0.8%</size>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
 </pre>
-
 <!-- Commit stats ends -->
 
 </td>
@@ -55,13 +58,14 @@
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
 <!-- Recent Pushed starts -->
-* <a href='' target='_blank'>wait info ...</a> 
-* <a href='' target='_blank'>wait info ...</a> 
-* <a href='' target='_blank'>wait info ...</a> 
-* <a href='' target='_blank'>wait info ...</a> 
-* <a href='' target='_blank'>wait info ...</a> 
+<pre>
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a>
+</pre>
 <!-- Recent Pushed ends -->
-
 </td>
 </tr>
 </table>
