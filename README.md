@@ -20,24 +20,24 @@
 </td>
 <td valign="top" width="50%">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Commit stat
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Most Used Language
 
-<!-- blog starts -->
+<!-- Most Used Language starts -->
 * <a href='' target='_blank'>wait info ...</a>
 * <a href='' target='_blank'>wait info ...</a>
 * <a href='' target='_blank'>wait info ...</a>
 * <a href='' target='_blank'>wait info ...</a>
 * <a href='' target='_blank'>wait info ...</a>
-<!-- blog ends -->
+<!-- Most Used Language ends -->
 
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Most Used Language
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Commit stats
 
-<!-- code_time starts -->
+<!-- Commit stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Markdown     31 mins  ███▓░░░░░░░░░░░░░░░░  71.1%</size>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Bash         10 mins  ██████▓░░░░░░░░░░░  24.6%</size>
@@ -47,20 +47,20 @@
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
 </pre>
 
-<!-- code_time ends -->
+<!-- Commit stats ends -->
 
 </td>
 <td valign="top" width="50%">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Activity
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
-<!-- douban starts -->
+<!-- Recent Pushed starts -->
 * <a href='' target='_blank'>wait info ...</a> 
 * <a href='' target='_blank'>wait info ...</a> 
 * <a href='' target='_blank'>wait info ...</a> 
 * <a href='' target='_blank'>wait info ...</a> 
 * <a href='' target='_blank'>wait info ...</a> 
-<!-- douban ends -->
+<!-- Recent Pushed ends -->
 
 </td>
 </tr>
