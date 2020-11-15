@@ -26,11 +26,12 @@
 
 <!-- Most Used Language starts -->
 <pre>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Markdown     31 mins  ███▓░░░░░░░░░░░░░░░░  71.1%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Bash         10 mins  ██████▓░░░░░░░░░░░  24.6%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>JavaScript    0 secs  ███▓░░░░░░░░░░░░░░░░  1.4%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>HTML          0 secs  ███▓░░░░░░░░░░░░░░░░  1.0%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Other         0 secs  ███▓░░░░░░░░░░░░░░░░  0.8%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
 </pre>
 <!-- Most Used Language ends -->
 
@@ -43,12 +44,10 @@
 
 <!-- Commit stats starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Markdown     31 mins  ███▓░░░░░░░░░░░░░░░░  71.1%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Bash         10 mins  ██████▓░░░░░░░░░░░  24.6%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>JavaScript    0 secs  ███▓░░░░░░░░░░░░░░░░  1.4%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>HTML          0 secs  ███▓░░░░░░░░░░░░░░░░  1.0%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Other         0 secs  ███▓░░░░░░░░░░░░░░░░  0.8%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
+🌞 Morning    24 commits  ██░░░░░░░░░░░░░░░░░░░  10.3%
+🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%
+🌃 Evening   111 commits  ██████████░░░░░░░░░░░  47.8%
+🌙 Night      19 commits  █░░░░░░░░░░░░░░░░░░░░  8.2%
 </pre>
 <!-- Commit stats ends -->
 
