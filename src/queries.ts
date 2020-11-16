@@ -84,3 +84,39 @@ export const queryRepositoryCommit = (name: string, repository: string) => `
     }
   }
 `;
+
+export const createQueryUserStats = (username: string) => `
+  {
+    user(login: "${username}") {
+      name
+      login
+      contributionsCollection {
+        totalCommitContributions
+      }
+      repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
+        totalCount
+      }
+      pullRequests(first: 1) {
+        totalCount
+      }
+      issues(first: 1) {
+        totalCount
+      }
+      followers {
+        totalCount
+      }
+      repositories(first: 100, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}) {
+        totalCount
+        nodes {
+          stargazers(first: 1) {
+            totalCount
+          }
+          name
+        }
+      }
+      starredRepositories(first: 1) {
+        totalCount
+      }
+    }
+  }
+`;
