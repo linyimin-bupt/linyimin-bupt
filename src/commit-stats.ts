@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import githubQuery from './github-query';
 import { generateBarChart } from './util';
 import { createUserInfoQuery, createContributedRepoQuery, createCommittedDateQuery } from './queries';
@@ -19,7 +20,7 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
     const userResponse = await githubQuery(createUserInfoQuery)
         .catch(error => console.error(`Unable to get username and id\n${error}`));
     
-    if (!userResponse.data || userResponse.data.viewer) {
+    if (!userResponse || !userResponse.data || !userResponse.data.viewer) {
         return {
             header: '',
             lines: []
@@ -97,10 +98,10 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
     }, []);
 
     const json = {
-        header: (morning + daytime) > (evening + night) ? "I'm an early 🐤" : "I'm a night 🦉",
+        header: (morning + daytime) > (evening + night) ? 'I\'m an early 🐤' : 'I\'m a night 🦉',
         lines: lines,
     };
 
     return json;
 
-}
+};

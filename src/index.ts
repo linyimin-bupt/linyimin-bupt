@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import { config } from 'dotenv';
 import { retriveCommitStats } from './commit-stats';
 import * as fs from 'fs';
-import { createMarkerRegExp } from './util'
+import { createMarkerRegExp } from './util';
 import { loadCpmmitStats } from './load-material';
 
 /**
@@ -14,9 +14,11 @@ config({ path: resolve(__dirname, '../.env') });
 (async () => {
   let mdContent = fs.readFileSync('README.md', { encoding: 'utf-8' }).toString();
   const commitStat = await retriveCommitStats();
-  mdContent = mdContent.replace(createMarkerRegExp('Commit stats'), (matchText) => {
-    return commitStat.header ? loadCpmmitStats(commitStat) : matchText;
-  });
+  console.log(commitStat);
+  const matchResult = mdContent.match(createMarkerRegExp('Commit stats'));
+  if (Array.isArray(matchResult) && matchResult.length > 0) {
+    mdContent = mdContent.replace(matchResult[1], loadCpmmitStats(commitStat));
+  }
   fs.writeFileSync('README.md', mdContent, { encoding: 'utf-8' });
-})()
+})();
 
