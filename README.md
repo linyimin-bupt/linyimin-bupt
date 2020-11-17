@@ -10,12 +10,12 @@
 
 <!-- github stats starts -->
 <pre>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
-<a href='' target='_blank'>wait info ...</a>
+<img src='stars.svg' height='16px'><font size=4.5>Total Stars             </font><font size=4.5>                  49</font>
+<img src='commits.svg' height='16px'><font size=4.5>Total Commits           </font><font size=4.5>                 284</font>
+<img src='prs.svg' height='16px'><font size=4.5>Total Pull Requests     </font><font size=4.5>                  68</font>
+<img src='issue.svg' height='16px'><font size=4.5>Total Issues            </font><font size=4.5>                  13</font>
+<img src='contributedTo.svg' height='16px'><font size=4.5>Contributed To          </font><font size=4.5>                   3</font>
+<img src='repositories.svg' height='16px'><font size=4.5>Total Repositories      </font><font size=4.5>                  91</font>
 </pre>
 <!-- github stats ends -->
 

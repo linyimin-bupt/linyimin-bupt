@@ -9,6 +9,7 @@ import {
     createUserStatsQuery 
 } from './queries';
 import { UserStats } from './model';
+import { loadUserStat } from './load-material';
 
 
 interface IRepo {
@@ -125,7 +126,7 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
 
 };
 
-export const retriveUserStats = async(): Promise<UserStatsVO> => {
+export const retriveUserStats = async(): Promise<string> => {
     const res = await query(createUserStatsQuery('linyimin-bupt'));
     if (!res || !res.data) return null;
     const data: UserStats = res.data as UserStats;
@@ -141,7 +142,5 @@ export const retriveUserStats = async(): Promise<UserStatsVO> => {
         repositories: data.user.repositories.totalCount
     };
 
-    console.log(result);
-
-    return result;
+    return loadUserStat(result);
 };
