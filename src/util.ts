@@ -19,6 +19,10 @@ export const generateBarChart = (percent: number, size: number): string => {
         .padEnd(size, syms.substring(0, 1));
 };
 
+/**
+ * 
+ * @param type 
+ */
 export const createMarkerRegExp = (type: string) => new RegExp(`<!-- ${type} starts -->\n<pre>\n((.|\n)*?)\n</pre>\n<!-- ${type} ends -->`);
 
 /**

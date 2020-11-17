@@ -1,7 +1,15 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable indent */
 
 import { generateBarChart, query } from './util';
-import { createUserInfoQuery, createContributedRepoQuery, createCommittedDateQuery } from './queries';
+import { 
+    createUserInfoQuery,
+    createContributedRepoQuery,
+    createCommittedDateQuery,
+    createUserStatsQuery 
+} from './queries';
+import { UserStats } from './model';
+
 
 interface IRepo {
     name: string;
@@ -12,6 +20,17 @@ export interface CommitStats {
     header: string,
     lines: string[]
 }
+
+export interface UserStatsVO {
+    stars: number,
+    commits: number,
+    prs: number,
+    issues: number,
+    contributedTo: number,
+    repositories: number
+}
+
+
 
 export const retriveCommitStats = async (): Promise<CommitStats> => {
     /**
@@ -104,4 +123,25 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
 
     return json;
 
+};
+
+export const retriveUserStats = async(): Promise<UserStatsVO> => {
+    const res = await query(createUserStatsQuery('linyimin-bupt'));
+    if (!res || !res.data) return null;
+    const data: UserStats = res.data as UserStats;
+
+    const stars = data.user.repositories.nodes.map(node => node.stargazers.totalCount).reduce((pre, cur) => pre + cur, 0);
+
+    const result = {
+        stars: stars,
+        commits: data.user.contributionsCollection.totalCommitContributions,
+        prs: data.user.pullRequests.totalCount,
+        issues: data.user.issues.totalCount,
+        contributedTo: data.user.repositoriesContributedTo.totalCount,
+        repositories: data.user.repositories.totalCount
+    };
+
+    console.log(result);
+
+    return result;
 };

@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { config } from 'dotenv';
-import { retriveCommitStats } from './service';
+import { retriveCommitStats, retriveUserStats } from './service';
 import * as fs from 'fs';
 import { createMarkerRegExp } from './util';
 import { loadCpmmitStats } from './load-material';
@@ -12,6 +12,10 @@ config({ path: resolve(__dirname, '../.env') });
 
 
 (async () => {
+
+  // user stas query
+  await retriveUserStats();
+
   let mdContent = fs.readFileSync('README.md', { encoding: 'utf-8' }).toString();
   const commitStat = await retriveCommitStats();
   console.log(commitStat);

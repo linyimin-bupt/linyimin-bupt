@@ -85,7 +85,7 @@ export const queryRepositoryCommit = (name: string, repository: string) => `
   }
 `;
 
-export const createQueryUserStats = (username: string) => `
+export const createUserStatsQuery = (username: string) => `
   {
     user(login: "${username}") {
       name
