@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { config } from 'dotenv';
-import { retriveCommitStats } from './commit-stats';
+import { retriveCommitStats } from './service';
 import * as fs from 'fs';
 import { createMarkerRegExp } from './util';
 import { loadCpmmitStats } from './load-material';

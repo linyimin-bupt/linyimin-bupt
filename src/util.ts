@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 /* eslint-disable indent */
 /**
  * clone from https://github.com/matchai/waka-box
@@ -30,3 +32,18 @@ export const format = (content: string, ...format: string[]) => {
         return typeof args[number] != 'undefined' ? args[number] : match;
     });
 };
+
+/**
+ * API query entrance
+ * @param query 
+ */
+export const query =  async (query: string) => {
+    const res = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      headers: {
+        Authorization: `bearer ${process.env.GH_TOKEN}`,
+      },
+      body: JSON.stringify({ query }).replace(/\\n/g, ''),
+    });
+    return res.json();
+  };

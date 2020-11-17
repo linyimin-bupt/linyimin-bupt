@@ -1,6 +1,6 @@
 /* eslint-disable indent */
-import githubQuery from './github-query';
-import { generateBarChart } from './util';
+
+import { generateBarChart, query } from './util';
 import { createUserInfoQuery, createContributedRepoQuery, createCommittedDateQuery } from './queries';
 
 interface IRepo {
@@ -17,7 +17,7 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
     /**
      * First, get user id
      */
-    const userResponse = await githubQuery(createUserInfoQuery)
+    const userResponse = await query(createUserInfoQuery)
         .catch(error => console.error(`Unable to get username and id\n${error}`));
     
     if (!userResponse || !userResponse.data || !userResponse.data.viewer) {
@@ -33,7 +33,7 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
      * Second, get contributed repos
      */
     const contributedRepoQuery = createContributedRepoQuery(username);
-    const repoResponse = await githubQuery(contributedRepoQuery)
+    const repoResponse = await query(contributedRepoQuery)
         .catch(error => console.error(`Unable to get the contributed repo\n${error}`));
     const repos: IRepo[] = repoResponse?.data?.user?.repositoriesContributedTo?.nodes
         .filter(repoInfo => (!repoInfo?.isFork))
@@ -46,7 +46,7 @@ export const retriveCommitStats = async (): Promise<CommitStats> => {
      * Third, get commit time and parse into commit-time/hour diagram
      */
     const committedTimeResponseMap = await Promise.all(
-        repos.map(({ name, owner }) => githubQuery(createCommittedDateQuery(id, name, owner)))
+        repos.map(({ name, owner }) => query(createCommittedDateQuery(id, name, owner)))
     ).catch(error => console.error(`Unable to get the commit info\n${error}`));
 
     if (!committedTimeResponseMap) return;
