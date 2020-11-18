@@ -86,7 +86,7 @@ export const queryRepositoryCommit = (name: string, repository: string) => `
 `;
 
 export const createUserStatsQuery = (username: string) => `
-  {
+  query {
     user(login: "${username}") {
       name
       login
@@ -119,4 +119,26 @@ export const createUserStatsQuery = (username: string) => `
       }
     }
   }
+`;
+
+
+export const createMostUsedLanguageQuery = (username: string): string => `
+  query {
+    user(login: "${username}") {
+      repositories(first: 10, isFork: false) {
+        nodes {
+          languages(orderBy: {field: SIZE, direction: DESC}, first: 10) {
+            totalSize
+            edges {
+              size
+              node {
+                name
+              }
+            }
+          }
+          name
+        }
+      }
+    }
+  }    
 `;

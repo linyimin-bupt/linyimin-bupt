@@ -33,3 +33,22 @@ export interface UserStats {
     }
   }
 }
+
+export interface MostUsedLanguages {
+  user: {
+    repositories: {
+      nodes: {
+        languages:{
+          totalSize: number
+          edges: {
+            size: number
+            node: {
+              name: string
+            }
+          }[]
+        }
+        name: string
+      }[]
+    }
+  }
+}
