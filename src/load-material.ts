@@ -10,14 +10,16 @@ export const loadCommitStats = (stats: CommitStats): string => {
 };
 
 export const loadUserStat = (stats: UserStatsVO): string => {
+
+  const iconUrl = 'https://github.com/linyimin-bupt/linyimin-bupt/blob/main';
   
   const template = [
-    { label: 'Total Stars', count: stats.stars, icon: 'stars.svg' },
-    { label: 'Total Commits', count: stats.commits, icon: 'commits.svg' },
-    { label: 'Total Pull Requests', count: stats.prs, icon: 'prs.svg' },
-    { label: 'Total Issues', count: stats.issues, icon: 'issue.svg' },
-    { label: 'Contributed To', count: stats.contributedTo, icon: 'contributedTo.svg' },
-    { label: 'Total Repositories', count: stats.repositories, icon: 'repositories.svg' }
+    { label: 'Total Stars', count: stats.stars, icon: `${iconUrl}/icons/total-star.svg` },
+    { label: 'Total Commits', count: stats.commits, icon: `${iconUrl}/icons/total-commits.svg` },
+    { label: 'Total Pull Requests', count: stats.prs, icon: `${iconUrl}/icons/total-prs.svg` },
+    { label: 'Total Issues', count: stats.issues, icon: `${iconUrl}/icons/total-issue.svg` },
+    { label: 'Contributed To', count: stats.contributedTo, icon: `${iconUrl}/icons/contributed-to.svg` },
+    { label: 'Total Repositories', count: stats.repositories, icon: `${iconUrl}/icons/contributed-to.svg` }
   ];
   const maxLenOfLabel = template.reduce((pre, cur) => cur.label.length > pre ? cur.label.length : pre, 0);
 

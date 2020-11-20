@@ -10,12 +10,12 @@
 
 <!-- github stats starts -->
 <pre>
-<img src='stars.svg' height='16px'><font size=4.5>Total Stars             </font><font size=4.5>                  49</font>
-<img src='commits.svg' height='16px'><font size=4.5>Total Commits           </font><font size=4.5>                 285</font>
-<img src='prs.svg' height='16px'><font size=4.5>Total Pull Requests     </font><font size=4.5>                  68</font>
-<img src='issue.svg' height='16px'><font size=4.5>Total Issues            </font><font size=4.5>                  13</font>
-<img src='contributedTo.svg' height='16px'><font size=4.5>Contributed To          </font><font size=4.5>                   3</font>
-<img src='repositories.svg' height='16px'><font size=4.5>Total Repositories      </font><font size=4.5>                  91</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'><font size=4.5>Total Stars             </font><font size=4.5>                  49</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'><font size=4.5>Total Commits           </font><font size=4.5>                 291</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'><font size=4.5>Total Pull Requests     </font><font size=4.5>                  68</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'><font size=4.5>Total Issues            </font><font size=4.5>                  13</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'><font size=4.5>Contributed To          </font><font size=4.5>                   3</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'><font size=4.5>Total Repositories      </font><font size=4.5>                  91</font>
 </pre>
 <!-- github stats ends -->
 
@@ -46,8 +46,8 @@
 <pre>
 🌞 Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%
 🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%
-🌃 Evening   111 commits  ██████████░░░░░░░░░░░  47.8%
-🌙 Night      19 commits  █▋░░░░░░░░░░░░░░░░░░░   8.2%
+🌃 Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%
+🌙 Night      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%
 </pre>
 <!-- Commit stats ends -->
 
