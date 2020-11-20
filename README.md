@@ -37,8 +37,9 @@
 
 </td>
 </tr>
+</table>
 
-
+<table>
 <tr>
 <td valign="top">
 
@@ -73,5 +74,4 @@
 
 </td>
 </tr>
-
 </table>
