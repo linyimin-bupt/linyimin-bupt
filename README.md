@@ -4,7 +4,7 @@
 
 <table>
 <tr width="100%">
-<td valign="top" width="50%">
+<td valign="top">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/jet-ski.svg' height="20px"> Github Stats
 
@@ -20,7 +20,7 @@
 <!-- github stats ends -->
 
 </td>
-<td valign="top" width="50%">
+<td valign="top">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Most Used Language
 
@@ -38,7 +38,7 @@
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%">
+<td valign="top"">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Commit stats
 
@@ -52,7 +52,7 @@
 <!-- Commit stats ends -->
 
 </td>
-<td valign="top" width="50%">
+<td valign="top">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
