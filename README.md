@@ -37,34 +37,5 @@
 
 </td>
 </tr>
-<tr>
-<td valign="top"">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Commit stats
-
-<!-- Commit stats starts -->
-<pre>
-<font>🌞 Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%</font>
-<font>🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%</font>
-<font>🌃 Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%</font>
-<font>🌙 Night      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%</font>
-</pre>
-<!-- Commit stats ends -->
-
-</td>
-<td valign="top">
-
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
-
-<!-- Recent Pushed starts -->
-<pre>
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a>
-</pre>
-<!-- Recent Pushed ends -->
-</td>
-</tr>
 </table>
