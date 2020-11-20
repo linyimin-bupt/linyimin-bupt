@@ -86,7 +86,7 @@ export const retriveCommitStats = async (): Promise<string> => {
         let morning = 0; // 6 - 12
         let daytime = 0; // 12 - 18
         let evening = 0; // 18 - 24
-        let night = 0; // 0 - 6
+        let midnight = 0; // 0 - 6
 
         committedTimeResponseMap.forEach(committedTimeResponse => {
             committedTimeResponse?.data?.repository?.ref?.target?.history?.edges.forEach(edge => {
@@ -100,21 +100,21 @@ export const retriveCommitStats = async (): Promise<string> => {
                 if (hour >= 6 && hour < 12) morning++;
                 if (hour >= 12 && hour < 18) daytime++;
                 if (hour >= 18 && hour < 24) evening++;
-                if (hour >= 0 && hour < 6) night++;
+                if (hour >= 0 && hour < 6) midnight++;
             });
         });
 
         /**
          * Next, generate diagram
          */
-        const sum = morning + daytime + evening + night;
+        const sum = morning + daytime + evening + midnight;
         if (!sum) return;
 
         const oneDay = [
-            { label: '🌞 Morning', commits: morning },
-            { label: '🌆 Daytime', commits: daytime },
-            { label: '🌃 Evening', commits: evening },
-            { label: '🌙 Night', commits: night },
+            { label: 'Morning', commits: morning },
+            { label: 'Daytime', commits: daytime },
+            { label: 'Evening', commits: evening },
+            { label: 'Midnight', commits: midnight },
         ];
 
         const lines = oneDay.reduce((prev, cur) => {
@@ -130,7 +130,7 @@ export const retriveCommitStats = async (): Promise<string> => {
         }, []);
 
         const json = {
-            header: (morning + daytime) > (evening + night) ? 'I\'m an early 🐤' : 'I\'m a night 🦉',
+            header: (morning + daytime) > (evening + midnight) ? 'I\'m an early 🐤' : 'I\'m a night 🦉',
             lines: lines,
         };
 
