@@ -37,9 +37,7 @@
 
 </td>
 </tr>
-</table>
 
-<table style="table-layout:fixed;width: 100%;">
 <tr>
 <td style="width: 50%;">
 
