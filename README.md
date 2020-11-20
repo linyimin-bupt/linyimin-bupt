@@ -48,7 +48,7 @@
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'/> Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'/> Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'/> Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'/> Midnight      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/tets.svg' height='16px'/> Midnight      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%
 </pre>
 <!-- Commit stats ends -->
 
