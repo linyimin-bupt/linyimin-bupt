@@ -41,37 +41,33 @@
 
 <table>
 <tr>
-<td valign="top">
+<td valign="top"">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/jet-ski.svg' height="20px"> Github Stats
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/catamaran.svg' height='20px'> Commit stats
 
-<!-- github stats starts -->
+<!-- Commit stats starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             293
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               13
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              3
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Total Repositories                         91
+<font>🌞 Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%</font>
+<font>🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%</font>
+<font>🌃 Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%</font>
+<font>🌙 Night      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%</font>
 </pre>
-<!-- github stats ends -->
+<!-- Commit stats ends -->
 
 </td>
 <td valign="top">
 
-## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Most Used Language
+## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
-<!-- Most Used Language starts -->
+<!-- Recent Pushed starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Markdown     31 mins  ███▓░░░░░░░░░░░░░░░░  71.1%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Bash         10 mins  ██████▓░░░░░░░░░░░  24.6%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>JavaScript    0 secs  ███▓░░░░░░░░░░░░░░░░  1.4%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>HTML          0 secs  ███▓░░░░░░░░░░░░░░░░  1.0%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Other         0 secs  ███▓░░░░░░░░░░░░░░░░  0.8%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a> 
+<a href='' target='_blank'>wait info ...</a>
 </pre>
-<!-- Most Used Language ends -->
-
+<!-- Recent Pushed ends -->
 </td>
 </tr>
 </table>
