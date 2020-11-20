@@ -37,7 +37,7 @@
 
 </td>
 </tr>
-
+<tr></tr>
 <tr>
 <td style="width: 50%;">
 
@@ -58,11 +58,13 @@
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
 <!-- Recent Pushed starts -->
+<pre>
 <a href='' target='_blank'>wait info ...</a> 
 <a href='' target='_blank'>wait info ...</a> 
 <a href='' target='_blank'>wait info ...</a> 
 <a href='' target='_blank'>wait info ...</a> 
 <a href='' target='_blank'>wait info ...</a>
+</pre>
 <!-- Recent Pushed ends -->
 </td>
 </tr>
