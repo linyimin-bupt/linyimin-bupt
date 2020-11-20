@@ -20,7 +20,7 @@
 <!-- github stats ends -->
 
 </td>
-<td valign="top" width="500px">
+<td valign="top" width="50%">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/sup.svg' height="20px"> Most Used Language
 
@@ -44,15 +44,15 @@
 
 <!-- Commit stats starts -->
 <pre>
-🌞 Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%
-🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%
-🌃 Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%
-🌙 Night      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%
+<font>🌞 Morning    24 commits  ██▏░░░░░░░░░░░░░░░░░░  10.3%</font>
+<font>🌆 Daytime    78 commits  ███████░░░░░░░░░░░░░░  33.6%</font>
+<font>🌃 Evening   115 commits  ██████████▍░░░░░░░░░░  49.6%</font>
+<font>🌙 Night      15 commits  █▎░░░░░░░░░░░░░░░░░░░   6.5%</font>
 </pre>
 <!-- Commit stats ends -->
 
 </td>
-<td valign="top" width="500px">
+<td valign="top" width="50%">
 
 ## <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/rafting.svg' height='20px'> Recent Pushed
 
