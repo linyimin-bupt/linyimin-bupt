@@ -25,8 +25,8 @@ export const loadUserStat = (stats: UserStatsVO): string => {
 
   const lines = template.reduce((pre, cur): string[] => {
     const line = [
-      `<img src='${cur.icon}' height='16px'><font size=4.5> ${cur.label.padEnd(maxLenOfLabel + 5)}</font>`,
-      `<b size=4.5> ${cur.count.toString().padStart(20)}</b>`
+      `<img src='${cur.icon}' height='16px'> ${cur.label.padEnd(maxLenOfLabel + 5)}`,
+      ` ${cur.count.toString().padStart(20)}`
     ];
 
     return [...pre, line.join('')];
