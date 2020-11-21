@@ -96,20 +96,29 @@ export const retriveCommitStats = async (): Promise<string> => {
 };
 
 export const retriveUserStats = async(): Promise<string> => {
-    const res = await query(createUserStatsQuery('linyimin-bupt'));
-    if (!res || !res.data) return null;
-    const data: UserStats = res.data as UserStats;
 
-    const stars = data.user.repositories.nodes.map(node => node.stargazers.totalCount).reduce((pre, cur) => pre + cur, 0);
+    try {
 
-    const result = {
-        stars: stars,
-        commits: data.user.contributionsCollection.totalCommitContributions,
-        prs: data.user.pullRequests.totalCount,
-        issues: data.user.issues.totalCount,
-        contributedTo: data.user.repositoriesContributedTo.totalCount,
-        repositories: data.user.repositories.totalCount
-    };
+        const userInfo = await retrieveUserInfo();
+        const { username } = userInfo;
 
-    return loadUserStat(result);
+        const res = await query(createUserStatsQuery(username));
+        if (!res || !res.data) return null;
+        const data: UserStats = res.data as UserStats;
+
+        const stars = data.user.repositories.nodes.map(node => node.stargazers.totalCount).reduce((pre, cur) => pre + cur, 0);
+
+        const result = {
+            stars: stars,
+            commits: data.user.contributionsCollection.totalCommitContributions,
+            prs: data.user.pullRequests.totalCount,
+            issues: data.user.issues.totalCount,
+            contributedTo: data.user.repositoriesContributedTo.totalCount,
+            repositories: data.user.repositories.totalCount
+        };
+
+        return loadUserStat(result);
+    } catch(error) {
+        return '';
+    }
 };

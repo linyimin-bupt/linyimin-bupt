@@ -125,7 +125,7 @@ export const createUserStatsQuery = (username: string) => `
 export const createMostUsedLanguageQuery = (username: string): string => `
   query {
     user(login: "${username}") {
-      repositories(first: 10, isFork: false) {
+      repositories(first: 100) {
         nodes {
           languages(orderBy: {field: SIZE, direction: DESC}, first: 10) {
             totalSize
