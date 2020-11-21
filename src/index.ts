@@ -22,7 +22,7 @@ config({ path: resolve(__dirname, '../.env') });
   const userStats =  await retriveUserStats();
   console.log(userStats);
   let matchResult = mdContent.match(createMarkerRegExp('github stats'));
-  if (Array.isArray(matchResult) && matchResult.length > 0) {
+  if (Array.isArray(matchResult) && matchResult.length > 0 && userStats) {
     mdContent = mdContent.replace(matchResult[1], userStats);
   }
 
@@ -30,7 +30,7 @@ config({ path: resolve(__dirname, '../.env') });
   const commitStat = await retriveCommitStats();
   console.log(commitStat);
   matchResult = mdContent.match(createMarkerRegExp('Commit stats'));
-  if (Array.isArray(matchResult) && matchResult.length > 0) {
+  if (Array.isArray(matchResult) && matchResult.length > 0 && commitStat) {
     mdContent = mdContent.replace(matchResult[1], commitStat);
   }
 
@@ -38,7 +38,7 @@ config({ path: resolve(__dirname, '../.env') });
   const mostUsedLanguages = await retrieveMostUsedLanguages();
   console.log(mostUsedLanguages);
   matchResult = mdContent.match(createMarkerRegExp('Most Used Language'));
-  if (Array.isArray(matchResult) && matchResult.length > 0) {
+  if (Array.isArray(matchResult) && matchResult.length > 0 && mostUsedLanguages) {
     mdContent = mdContent.replace(matchResult[1], mostUsedLanguages);
   }
 
