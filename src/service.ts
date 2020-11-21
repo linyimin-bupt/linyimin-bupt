@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable indent */
 
-import { generateBarChart, query } from './util';
+import { query } from './util';
 import { 
     createUserInfoQuery,
     createContributedRepoQuery,
@@ -15,20 +14,6 @@ import { loadCommitStats, loadUserStat } from './load-material';
 interface IRepo {
     name: string;
     owner: string;
-}
-
-export interface CommitStats {
-    header: string,
-    lines: string[]
-}
-
-export interface UserStatsVO {
-    stars: number,
-    commits: number,
-    prs: number,
-    issues: number,
-    contributedTo: number,
-    repositories: number
 }
 
 interface UserInfo {
@@ -74,12 +59,12 @@ const retrieveOwnerRepos = async(username: string): Promise<IRepo[]>  => {
         throw Error(JSON.stringify(error));
     }
 
-}
+};
 
 
 export const retriveCommitStats = async (): Promise<string> => {
 
-    let committedTimeList: CommitedDate[] = []
+    let committedTimeList: CommitedDate[] = [];
 
     try {
 

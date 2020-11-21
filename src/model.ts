@@ -87,3 +87,16 @@ export interface CommitedDate {
     }
   }
 }
+export interface CommitStats {
+  header: string,
+  lines: string[]
+}
+
+export interface UserStatsVO {
+  stars: number,
+  commits: number,
+  prs: number,
+  issues: number,
+  contributedTo: number,
+  repositories: number
+}
