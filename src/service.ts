@@ -149,7 +149,7 @@ export const retrieveMostUsedLanguages = async (): Promise<string> => {
         // retrieve top 6 languages
         const languageStatsMap = {};
         Object.entries(langStasMap).sort(([,a],[,b]) => b - a).slice(0, 6).map(value => {
-            languageStatsMap[value[0]] = value[1]
+            languageStatsMap[value[0]] = value[1];
         });
 
         return loadMostUsedLanguages(languageStatsMap);
