@@ -94,7 +94,7 @@ export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number})
   const lines = Object.keys(usedLanguageMap).reduce((prev, cur) => {
     const iconFilePath = path.join(iconPath, `${cur.toLowerCase()}-original-wordmark.svg`);
     if (!fs.existsSync(iconFilePath)) {
-      textToSvg(cur.toLowerCase().substring(0, 1));
+      textToSvg(cur.toLowerCase());
     }
     const percent = usedLanguageMap[cur] / sum * 100;
 
