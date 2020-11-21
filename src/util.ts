@@ -1,4 +1,7 @@
 import fetch from 'node-fetch';
+import * as TextToSVG from 'text-to-svg';
+import * as fs from 'fs';
+import * as path from 'path';
 
 /* eslint-disable indent */
 /**
@@ -50,4 +53,17 @@ export const query =  async (query: string) => {
       body: JSON.stringify({ query }).replace(/\\n/g, ''),
     });
     return res.json();
-  };
+};
+
+/**
+ * programming language name to svg
+ * @param text 
+ */
+export const textToSvg = (text: string): void => {
+  const textToSVG = TextToSVG.loadSync();
+  const options = {x: 0, y: 0, anchor: 'top', attributes: {fill: '#1E90FF'} };
+  
+  const svg = textToSVG.getSVG(text, options as TextToSVG.GenerationOptions);
+
+  fs.writeFileSync(path.join(__dirname, '../icons', `${text}.svg`), svg);
+}
