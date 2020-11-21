@@ -129,7 +129,7 @@ export const loadRecentlyPush = (recentlyPusheds: RecentlyPushed[]): string => {
       `<img src='${iconUrl}/icons/${cur.primaryLanguage.toLowerCase()}-original-wordmark.svg' height='16px' width='16px'>`,
       `${cur.repository}(${cur.branch})`.padEnd(maxLength + 1),
       `${cur.changeFiles} files`.padStart(8),
-      new Date(cur.pushedAt).toLocaleDateString()
+      new Date(cur.pushedAt).toLocaleDateString().padStart(10)
     ]
     return [...prev, line.join(' ')];
   }, []);
