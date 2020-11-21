@@ -99,7 +99,7 @@ export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number})
     const percent = usedLanguageMap[cur] / sum * 100;
 
     const line = [
-      `<img src='${iconUrl}/${cur.toLowerCase()}-original-wordmark.svg' height='16px'>`,
+      `<img src='${iconUrl}/icons/${cur.toLowerCase()}-original-wordmark.svg' height='16px'>`,
       `${cur}`.padEnd(10),
       `${usedLanguageMap[cur].toString().padStart(4)} commits`.padEnd(14),
       generateBarChart(percent, 15),
