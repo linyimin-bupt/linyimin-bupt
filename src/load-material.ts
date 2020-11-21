@@ -1,10 +1,12 @@
-import { CommitedDate } from './model';
+import { CommitedDate, RecentlyPushed } from './model';
 import { UserStatsVO } from './model';
 import { generateBarChart, textToSvg } from './util';
 import * as path from 'path';
 import * as fs from 'fs';
 
 const iconUrl = 'https://github.com/linyimin-bupt/linyimin-bupt/blob/main';
+const githubUrl = 'https://github.com/linyimin-bupt';
+const iconPath = path.join(__dirname, '../icons/');
 
 /**
  * load commit stats material
@@ -89,7 +91,6 @@ export const loadUserStat = (stats: UserStatsVO): string => {
 };
 
 export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number}): string => {
-  const iconPath = path.join(__dirname, '../icons/');
   const sum = Object.values(usedLanguageMap).reduce((prev, cur) => prev + cur, 0);
   const lines = Object.keys(usedLanguageMap).reduce((prev, cur) => {
     const iconFilePath = path.join(iconPath, `${cur.toLowerCase()}-original-wordmark.svg`);
@@ -104,6 +105,31 @@ export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number})
       generateBarChart(percent, 21),
       String(percent.toFixed(1)).padStart(5) + '%',
     ];
+    return [...prev, line.join(' ')];
+  }, []);
+
+  return lines.join('\n');
+}
+
+
+export const loadRecentlyPush = (recentlyPusheds: RecentlyPushed[]): string => {
+
+  const repositoryNameMaxLength = recentlyPusheds.reduce((prev, cur) => cur.repository.length > prev ? cur.repository.length : prev, 0);
+    const branchNameMaxLength = recentlyPusheds.reduce((prev, cur) => cur.branch.length > prev ? cur.branch.length : prev, 0);
+
+  const lines = recentlyPusheds.reduce((prev, cur) => {
+    const iconFilePath = path.join(iconPath, `${cur.primaryLanguage.toLowerCase()}-original-wordmark.svg`);
+    if (!fs.existsSync(iconFilePath)) {
+      textToSvg(cur.primaryLanguage.toLowerCase());
+    }
+
+    const line = [
+      `<img src='${iconUrl}/icons/${cur.primaryLanguage.toLowerCase()}-original-wordmark.svg' height='16px' width='16px'>`,
+      `<a herf=${githubUrl}/${cur.repository}>${cur.repository.padEnd(repositoryNameMaxLength + 2)}</a>`,
+      cur.branch.padEnd(branchNameMaxLength + 2),
+      `${cur.changeFiles} files`.padStart(10),
+      new Date(cur.pushedAt).toLocaleDateString().padEnd(12)
+    ]
     return [...prev, line.join(' ')];
   }, []);
 

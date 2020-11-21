@@ -6,18 +6,22 @@ import {
     createContributedRepoQuery,
     createCommittedDateQuery,
     createUserStatsQuery, 
-    createMostUsedLanguageQuery
+    createMostUsedLanguageQuery,
+    createRepositoriesCommitQuery
 } from './queries';
 import { 
     CommitedDate,
     OwnerRepository,
     UserStats,
-    MostUsedLanguages
+    MostUsedLanguages,
+    RecentlyPushRepositories,
+    RecentlyPushed
  } from './model';
 import {
     loadCommitStats,
     loadUserStat,
-    loadMostUsedLanguages
+    loadMostUsedLanguages,
+    loadRecentlyPush
 } from './load-material';
 
 
@@ -159,3 +163,34 @@ export const retrieveMostUsedLanguages = async (): Promise<string> => {
         return '';
     }
 }
+
+export const retrieveRecentlyPush = async(): Promise<string> => {
+    try {
+        const userInfo = await retrieveUserInfo();
+        const { username } = userInfo;
+
+        const res: RecentlyPushRepositories = await query(createRepositoriesCommitQuery(username));
+
+        let recentlyPushedInfos: RecentlyPushed[] = [];
+
+        res.data.repositoryOwner.repositories.nodes.forEach(repository => {
+            repository.refs.nodes.forEach(branch => {
+                recentlyPushedInfos.push({
+                    repository: repository.name,
+                    branch: branch.name,
+                    changeFiles: branch.target.changedFiles,
+                    pushedAt: branch.target.committedDate,
+                    primaryLanguage: repository.primaryLanguage ? repository.primaryLanguage.name : 'null'
+                });
+            })
+        });
+
+        recentlyPushedInfos = recentlyPushedInfos.sort((a, b) => b.pushedAt.localeCompare(a.pushedAt)).slice(0, 4);
+
+        return loadRecentlyPush(recentlyPushedInfos);
+
+    } catch(error) {
+        console.log(JSON.stringify(error));
+        return '';
+    }
+} 

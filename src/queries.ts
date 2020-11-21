@@ -45,39 +45,25 @@ export const createCommittedDateQuery = (id: string, name: string, owner: string
   }
 `;
 
-
-export const queryCommitRepositories = (name: string) => `
+export const createRepositoriesCommitQuery = (username: string) => `
   query {
-    repositoryOwner(login: "${name}") {
-      repositories(first: 5, orderBy: {field: PUSHED_AT, direction: DESC}) {
-        edges {
-          node {
-            name
-            primaryLanguage {
+    repositoryOwner(login: "linyimin-bupt") {
+      repositories(first: 4, orderBy: {field: PUSHED_AT, direction: DESC}, isFork: false, ownerAffiliations: OWNER) {
+        nodes {
+          name
+          refs(refPrefix: "refs/heads/", first: 100, orderBy: {field: TAG_COMMIT_DATE, direction: DESC}) {
+            nodes {
               name
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
-export const queryRepositoryCommit = (name: string, repository: string) => `
-  query {
-    repository(owner: "${name}", name: "${repository}") {
-      ref(qualifiedName: "main") {
-        target {
-          ... on Commit {
-            history(first: 100) {
-              edges {
-                node {
-                  committedDate
-                  message
+              target {
+                ... on Commit {
                   changedFiles
+                  committedDate
                 }
               }
             }
+          }
+          primaryLanguage {
+            name
           }
         }
       }

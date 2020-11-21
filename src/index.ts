@@ -3,7 +3,8 @@ import { config } from 'dotenv';
 import {
   retriveCommitStats,
   retriveUserStats,
-  retrieveMostUsedLanguages
+  retrieveMostUsedLanguages,
+  retrieveRecentlyPush
 } from './service';
 import * as fs from 'fs';
 import { createMarkerRegExp } from './util';
@@ -41,6 +42,15 @@ config({ path: resolve(__dirname, '../.env') });
   if (Array.isArray(matchResult) && matchResult.length > 0 && mostUsedLanguages) {
     mdContent = mdContent.replace(matchResult[1], mostUsedLanguages);
   }
+
+  // Recently Push
+  const recentlyPushed = await retrieveRecentlyPush();
+  console.log(recentlyPushed);
+  matchResult = mdContent.match(createMarkerRegExp('Recent Pushed'));
+  if (Array.isArray(matchResult) && matchResult.length > 0 && recentlyPushed) {
+    mdContent = mdContent.replace(matchResult[1], recentlyPushed);
+  }
+
 
   fs.writeFileSync('README.md', mdContent, { encoding: 'utf-8' });
 })();

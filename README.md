@@ -11,7 +11,7 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2020)                       343
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2020)                       347
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               13
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              3
@@ -59,11 +59,10 @@
 
 <!-- Recent Pushed starts -->
 <pre>
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a> 
-<a href='' target='_blank'>wait info ...</a>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> <a herf=https://github.com/linyimin-bupt/linyimin-bupt>linyimin-bupt       </a> main        1 files 2020/11/21  
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> <a herf=https://github.com/linyimin-bupt/hokage>hokage              </a> master      6 files 2020/11/19  
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> <a herf=https://github.com/linyimin-bupt/linyimin.github.io>linyimin.github.io  </a> master     93 files 2020/11/15  
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/null-original-wordmark.svg' height='16px' width='16px'> <a herf=https://github.com/linyimin-bupt/ideas>ideas               </a> master      1 files 2020/6/27   
 </pre>
 <!-- Recent Pushed ends -->
 </td>

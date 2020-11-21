@@ -100,3 +100,35 @@ export interface UserStatsVO {
   contributedTo: number,
   repositories: number
 }
+
+export interface RecentlyPushRepositories {
+  data: {
+    repositoryOwner: {
+      repositories: {
+        nodes: {
+          name: string,
+          refs: {
+            nodes: {
+              name: string,
+              target: {
+                changedFiles: number,
+                committedDate: string
+              }
+            }[]
+          },
+          primaryLanguage: {
+            name: string
+          }
+        }[]
+      }
+    }
+  }
+}
+
+export interface RecentlyPushed {
+  repository: string,
+  branch: string,
+  changeFiles: number,
+  pushedAt: string,
+  primaryLanguage: string,
+}
