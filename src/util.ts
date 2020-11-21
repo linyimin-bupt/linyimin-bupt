@@ -65,5 +65,5 @@ export const textToSvg = (text: string): void => {
   
   const svg = textToSVG.getSVG(text, options as TextToSVG.GenerationOptions);
 
-  fs.writeFileSync(path.join(__dirname, '../icons', `${text}.svg`), svg);
+  fs.writeFileSync(path.join(__dirname, '../icons', `${text}-origianl-wordmark.svg`), svg);
 }

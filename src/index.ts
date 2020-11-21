@@ -1,6 +1,10 @@
 import { resolve } from 'path';
 import { config } from 'dotenv';
-import { retriveCommitStats, retriveUserStats } from './service';
+import {
+  retriveCommitStats,
+  retriveUserStats,
+  retrieveMostUsedLanguages
+} from './service';
 import * as fs from 'fs';
 import { createMarkerRegExp } from './util';
 
@@ -29,6 +33,15 @@ config({ path: resolve(__dirname, '../.env') });
   if (Array.isArray(matchResult) && matchResult.length > 0) {
     mdContent = mdContent.replace(matchResult[1], commitStat);
   }
+
+  // Most Used Languages
+  const mostUsedLanguages = await retrieveMostUsedLanguages();
+  console.log(mostUsedLanguages);
+  matchResult = mdContent.match(createMarkerRegExp('Most Used Language'));
+  if (Array.isArray(matchResult) && matchResult.length > 0) {
+    mdContent = mdContent.replace(matchResult[1], mostUsedLanguages);
+  }
+
   fs.writeFileSync('README.md', mdContent, { encoding: 'utf-8' });
 })();
 

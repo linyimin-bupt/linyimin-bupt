@@ -1,6 +1,8 @@
 import { CommitedDate } from './model';
 import { UserStatsVO } from './model';
-import { generateBarChart } from './util';
+import { generateBarChart, textToSvg } from './util';
+import * as path from 'path';
+import * as fs from 'fs';
 
 const iconUrl = 'https://github.com/linyimin-bupt/linyimin-bupt/blob/main';
 
@@ -85,3 +87,26 @@ export const loadUserStat = (stats: UserStatsVO): string => {
 
   return lines.join('\n');
 };
+
+export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number}): string => {
+  const iconPath = path.join(__dirname, '../icons/');
+  const sum = Object.values(usedLanguageMap).reduce((prev, cur) => prev + cur, 0);
+  const lines = Object.keys(usedLanguageMap).reduce((prev, cur) => {
+    const iconFilePath = path.join(iconPath, `${cur.toLowerCase()}-original-wordmark.svg`);
+    if (!fs.existsSync(iconFilePath)) {
+      textToSvg(cur.toLowerCase());
+    }
+    const percent = usedLanguageMap[cur] / sum * 100;
+
+    const line = [
+      `<img src='${iconUrl}/${cur.toLowerCase()}-original-wordmark.svg' height='16px'>`,
+      `${cur}`.padEnd(10),
+      `${usedLanguageMap[cur].toString().padStart(4)} commits`.padEnd(14),
+      generateBarChart(percent, 15),
+      String(percent.toFixed(1)).padStart(5) + '%',
+    ];
+    return [...prev, line.join(' ')];
+  }, []);
+
+  return lines.join('\n');
+}

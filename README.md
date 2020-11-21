@@ -11,11 +11,11 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             324
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             327
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               13
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              3
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Total Repositories                         91
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Total Repositories                         92
 </pre>
 <!-- github stats ends -->
 
@@ -26,12 +26,19 @@
 
 <!-- Most Used Language starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Markdown     31 mins  ███▓░░░░░░░░░░░░░░░░  71.1%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Bash         10 mins  ██████▓░░░░░░░░░░░  24.6%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>JavaScript    0 secs  ███▓░░░░░░░░░░░░░░░░  1.4%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>HTML          0 secs  ███▓░░░░░░░░░░░░░░░░  1.0%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Other         0 secs  ███▓░░░░░░░░░░░░░░░░  0.8%</size>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'><font size=4.5>Java          0 secs  ███▓░░░░░░░░░░░░░░░░  0.7%</size>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/html-original-wordmark.svg' height='16px'> HTML       396786 commits █▉░░░░░░░░░░░░░  13.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/javascript-original-wordmark.svg' height='16px'> JavaScript 298026 commits █▍░░░░░░░░░░░░░   9.9%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/typescript-original-wordmark.svg' height='16px'> TypeScript 777007 commits ███▊░░░░░░░░░░░  25.8%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/css-original-wordmark.svg' height='16px'> CSS        777763 commits ███▉░░░░░░░░░░░  25.8%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/java-original-wordmark.svg' height='16px'> Java       594015 commits ██▉░░░░░░░░░░░░  19.7%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/shell-original-wordmark.svg' height='16px'> Shell      37852 commits  ▏░░░░░░░░░░░░░░   1.3%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/batchfile-original-wordmark.svg' height='16px'> Batchfile  4994 commits   ░░░░░░░░░░░░░░░   0.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/c-original-wordmark.svg' height='16px'> C          116703 commits ▌░░░░░░░░░░░░░░   3.9%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/cmake-original-wordmark.svg' height='16px'> CMake       381 commits   ░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/dockerfile-original-wordmark.svg' height='16px'> Dockerfile  234 commits   ░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/prolog-original-wordmark.svg' height='16px'> Prolog      573 commits   ░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/less-original-wordmark.svg' height='16px'> Less       4624 commits   ░░░░░░░░░░░░░░░   0.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/stylus-original-wordmark.svg' height='16px'> Stylus      100 commits   ░░░░░░░░░░░░░░░   0.0%
 </pre>
 <!-- Most Used Language ends -->
 

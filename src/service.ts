@@ -5,10 +5,20 @@ import {
     createUserInfoQuery,
     createContributedRepoQuery,
     createCommittedDateQuery,
-    createUserStatsQuery 
+    createUserStatsQuery, 
+    createMostUsedLanguageQuery
 } from './queries';
-import { CommitedDate, OwnerRepository, UserStats } from './model';
-import { loadCommitStats, loadUserStat } from './load-material';
+import { 
+    CommitedDate,
+    OwnerRepository,
+    UserStats,
+    MostUsedLanguages
+ } from './model';
+import {
+    loadCommitStats,
+    loadUserStat,
+    loadMostUsedLanguages
+} from './load-material';
 
 
 interface IRepo {
@@ -122,3 +132,25 @@ export const retriveUserStats = async(): Promise<string> => {
         return '';
     }
 };
+
+export const retrieveMostUsedLanguages = async (): Promise<string> => {
+    try {
+        const userInfo = await retrieveUserInfo();
+        const { username } = userInfo;
+
+        const res: MostUsedLanguages = await query(createMostUsedLanguageQuery(username));
+        const langStasMap: {[name: string]: number} = {}
+        res.data.user.repositories.nodes.map(language => {
+            language.languages.edges.forEach(edge => {
+                const size = langStasMap[edge.node.name] || 0;
+                langStasMap[edge.node.name] = size + edge.size;
+            });
+        });
+
+        return loadMostUsedLanguages(langStasMap);
+
+    } catch (error) {
+        console.log(JSON.stringify(error));
+        return '';
+    }
+}
