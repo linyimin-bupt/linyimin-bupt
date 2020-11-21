@@ -68,7 +68,7 @@ export const loadUserStat = (stats: UserStatsVO): string => {
   
   const template = [
     { label: 'Total Stars', count: stats.stars, icon: `${iconUrl}/icons/total-star.svg` },
-    { label: 'Total Commits', count: stats.commits, icon: `${iconUrl}/icons/total-commits.svg` },
+    { label: 'Total Commits(2020)', count: stats.commits, icon: `${iconUrl}/icons/total-commits.svg` },
     { label: 'Total Pull Requests', count: stats.prs, icon: `${iconUrl}/icons/total-prs.svg` },
     { label: 'Total Issues', count: stats.issues, icon: `${iconUrl}/icons/total-issue.svg` },
     { label: 'Contributed To', count: stats.contributedTo, icon: `${iconUrl}/icons/contributed-to.svg` },
