@@ -114,8 +114,10 @@ export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number})
 
 export const loadRecentlyPush = (recentlyPusheds: RecentlyPushed[]): string => {
 
-  const repositoryNameMaxLength = recentlyPusheds.reduce((prev, cur) => cur.repository.length > prev ? cur.repository.length : prev, 0);
-    const branchNameMaxLength = recentlyPusheds.reduce((prev, cur) => cur.branch.length > prev ? cur.branch.length : prev, 0);
+  const maxLength = recentlyPusheds.reduce((prev, cur) => {
+    const totalLength = cur.repository.length + 2 + cur.branch.length;
+    return totalLength > prev ? totalLength : prev;
+  }, 0);
 
   const lines = recentlyPusheds.reduce((prev, cur) => {
     const iconFilePath = path.join(iconPath, `${cur.primaryLanguage.toLowerCase()}-original-wordmark.svg`);
@@ -125,10 +127,9 @@ export const loadRecentlyPush = (recentlyPusheds: RecentlyPushed[]): string => {
 
     const line = [
       `<img src='${iconUrl}/icons/${cur.primaryLanguage.toLowerCase()}-original-wordmark.svg' height='16px' width='16px'>`,
-      `<a herf=${githubUrl}/${cur.repository}>${cur.repository.padEnd(repositoryNameMaxLength + 2)}</a>`,
-      cur.branch.padEnd(branchNameMaxLength + 2),
-      `${cur.changeFiles} files`.padStart(10),
-      new Date(cur.pushedAt).toLocaleDateString().padEnd(12)
+      `${cur.repository}(${cur.branch})`.padEnd(maxLength + 2),
+      `${cur.changeFiles} files`.padStart(8),
+      new Date(cur.pushedAt).toLocaleDateString()
     ]
     return [...prev, line.join(' ')];
   }, []);
