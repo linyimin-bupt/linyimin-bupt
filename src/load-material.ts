@@ -59,12 +59,10 @@ export const loadCommitStats = async (commitedStats: CommitedDate[]): Promise<st
     return [...prev, line.join(' ')];
   }, []);
 
-  const json = {
-    header: (commitDateTotal.morning + commitDateTotal.daytime) > (commitDateTotal.evening + commitDateTotal.midnight) ? 'I\'m an early 🐤' : 'I\'m a night 🦉',
-    lines: lines,
-  };
+  const header: string = (commitDateTotal.morning + commitDateTotal.daytime) > (commitDateTotal.evening + commitDateTotal.midnight) ? 'I\'m an early 🐤' : 'I\'m a night 🦉';
+  lines.unshift(header);
 
-  return json.lines.join('\n');
+  return lines.join('\n');
 };
 
 export const loadUserStat = (stats: UserStatsVO): string => {
