@@ -139,15 +139,20 @@ export const retrieveMostUsedLanguages = async (): Promise<string> => {
         const { username } = userInfo;
 
         const res: MostUsedLanguages = await query(createMostUsedLanguageQuery(username));
-        const langStasMap: {[name: string]: number} = {}
+        let langStasMap: {[name: string]: number} = {}
         res.data.user.repositories.nodes.map(language => {
             language.languages.edges.forEach(edge => {
                 const size = langStasMap[edge.node.name] || 0;
                 langStasMap[edge.node.name] = size + edge.size;
             });
         });
+        // retrieve top 6 languages
+        const languageStatsMap = {};
+        Object.entries(langStasMap).sort(([,a],[,b]) => b - a).slice(0, 6).map(value => {
+            languageStatsMap[value[0]] = value[1]
+        });
 
-        return loadMostUsedLanguages(langStasMap);
+        return loadMostUsedLanguages(languageStatsMap);
 
     } catch (error) {
         console.log(JSON.stringify(error));
