@@ -11,7 +11,7 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             331
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             332
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               13
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              3
@@ -26,19 +26,19 @@
 
 <!-- Most Used Language starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/html-original-wordmark.svg' height='16px'> HTML       █▉░░░░░░░░░░░░░  13.2%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/javascript-original-wordmark.svg' height='16px'> JavaScript █▍░░░░░░░░░░░░░   9.9%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px'> TypeScript ███▉░░░░░░░░░░░  25.9%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px'> CSS        ███▊░░░░░░░░░░░  25.8%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'> Java       ██▉░░░░░░░░░░░░  19.7%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/shell-original-wordmark.svg' height='16px'> Shell      ▏░░░░░░░░░░░░░░   1.3%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/batchfile-original-wordmark.svg' height='16px'> Batchfile  ░░░░░░░░░░░░░░░   0.2%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/c-original-wordmark.svg' height='16px'> C          ▌░░░░░░░░░░░░░░   3.9%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/cmake-original-wordmark.svg' height='16px'> CMake      ░░░░░░░░░░░░░░░   0.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/dockerfile-original-wordmark.svg' height='16px'> Dockerfile ░░░░░░░░░░░░░░░   0.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/prolog-original-wordmark.svg' height='16px'> Prolog     ░░░░░░░░░░░░░░░   0.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/less-original-wordmark.svg' height='16px'> Less       ░░░░░░░░░░░░░░░   0.2%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/stylus-original-wordmark.svg' height='16px'> Stylus     ░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/html-original-wordmark.svg' height='16px'> HTML             ██▊░░░░░░░░░░░░░░░░░░  13.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/javascript-original-wordmark.svg' height='16px'> JavaScript       ██░░░░░░░░░░░░░░░░░░░   9.9%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px'> TypeScript       █████▍░░░░░░░░░░░░░░░  25.9%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px'> CSS              █████▍░░░░░░░░░░░░░░░  25.8%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px'> Java             ████▏░░░░░░░░░░░░░░░░  19.7%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/shell-original-wordmark.svg' height='16px'> Shell            ▎░░░░░░░░░░░░░░░░░░░░   1.3%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/batchfile-original-wordmark.svg' height='16px'> Batchfile        ░░░░░░░░░░░░░░░░░░░░░   0.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/c-original-wordmark.svg' height='16px'> C                ▊░░░░░░░░░░░░░░░░░░░░   3.9%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/cmake-original-wordmark.svg' height='16px'> CMake            ░░░░░░░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/dockerfile-original-wordmark.svg' height='16px'> Dockerfile       ░░░░░░░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/prolog-original-wordmark.svg' height='16px'> Prolog           ░░░░░░░░░░░░░░░░░░░░░   0.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/less-original-wordmark.svg' height='16px'> Less             ░░░░░░░░░░░░░░░░░░░░░   0.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/stylus-original-wordmark.svg' height='16px'> Stylus           ░░░░░░░░░░░░░░░░░░░░░   0.0%
 </pre>
 <!-- Most Used Language ends -->
 

@@ -100,8 +100,8 @@ export const loadMostUsedLanguages = (usedLanguageMap: {[name: string]: number})
 
     const line = [
       `<img src='${iconUrl}/icons/${cur.toLowerCase()}-original-wordmark.svg' height='16px'>`,
-      `${cur}`.padEnd(10),
-      generateBarChart(percent, 15),
+      `${cur}`.padEnd(16),
+      generateBarChart(percent, 21),
       String(percent.toFixed(1)).padStart(5) + '%',
     ];
     return [...prev, line.join(' ')];
