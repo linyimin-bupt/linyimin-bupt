@@ -11,7 +11,7 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             321
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits                             323
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               13
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              3
@@ -45,7 +45,6 @@
 
 <!-- Commit stats starts -->
 <pre>
-I'm a night 🦉
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'> Morning    24 commits   █▌░░░░░░░░░░░░░  10.3%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    78 commits   █████░░░░░░░░░░  33.6%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening   115 commits   ███████▍░░░░░░░  49.6%
