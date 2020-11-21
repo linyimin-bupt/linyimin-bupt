@@ -40,15 +40,16 @@ export const loadCommitStats = async (commitedStats: CommitedDate[]): Promise<st
   if (!sum) return;
 
   const oneDay = [
-    { label: 'Morning', commits: commitDateTotal.morning },
-    { label: 'Daytime', commits: commitDateTotal.daytime },
-    { label: 'Evening', commits: commitDateTotal.evening },
-    { label: 'Midnight', commits: commitDateTotal.midnight },
+    { label: 'Morning', commits: commitDateTotal.morning, icon: `${iconUrl}/icons/morning.svg` },
+    { label: 'Daytime', commits: commitDateTotal.daytime, icon: `${iconUrl}/icons/daytime.svg` },
+    { label: 'Evening', commits: commitDateTotal.evening, icon: `${iconUrl}/icons/evening.svg` },
+    { label: 'Midnight', commits: commitDateTotal.midnight, icon: `${iconUrl}/icons/midnight.svg` },
   ];
 
   const lines = oneDay.reduce((prev, cur) => {
     const percent = cur.commits / sum * 100;
     const line = [
+      `<img src='${cur.icon}' height='16px'>`,
       `${cur.label}`.padEnd(10),
       `${cur.commits.toString().padStart(5)} commits`.padEnd(14),
       generateBarChart(percent, 17),
