@@ -1,17 +1,74 @@
 // eslint-disable-next-line no-unused-vars
-import { CommitStats, UserStatsVO } from './service';
+import { CommitedDate } from './model';
+import { UserStatsVO } from './service';
+import { generateBarChart } from './util';
+
+
+const iconUrl = 'https://github.com/linyimin-bupt/linyimin-bupt/blob/main';
 
 /**
  * load commit stats material
  * @param stats 
  */
-export const loadCommitStats = (stats: CommitStats): string => {
-  return stats.lines.join('\n');
-};
+export const loadCommitStats = async (commitedStats: CommitedDate[]): Promise<string> => {
+
+  const commitDateTotal = {
+      morning: 0,     // 06 - 12,
+      daytime: 0,     // 12 - 18,
+      evening: 0,     // 18 - 24,
+      midnight: 0,    // 24 - 06
+  }
+
+  commitedStats.forEach(committedTimeResponse => {
+      committedTimeResponse.data.repository.ref.target.history.edges.forEach(edge => {
+          const committedDate = edge.node.committedDate;
+          const timeString = new Date(committedDate).toLocaleTimeString('en-US', { hour12: false, timeZone: process.env.TIMEZONE });
+          const hour = +(timeString.split(':')[0]);
+
+          /**
+           * voting and counting
+           */
+          if (hour >= 6 && hour < 12) commitDateTotal.morning++;
+          if (hour >= 12 && hour < 18) commitDateTotal.daytime++;
+          if (hour >= 18 && hour < 24) commitDateTotal.evening++;
+          if (hour >= 0 && hour < 6) commitDateTotal.midnight++;
+      });
+  });
+
+  /**
+   * Next, generate diagram
+   */
+  const sum = Object.keys(commitDateTotal).reduce((pre, cur) => pre + commitDateTotal[cur], 0);
+  if (!sum) return;
+
+  const oneDay = [
+      { label: 'Morning', commits: commitDateTotal.morning },
+      { label: 'Daytime', commits: commitDateTotal.daytime },
+      { label: 'Evening', commits: commitDateTotal.evening },
+      { label: 'Midnight', commits: commitDateTotal.midnight },
+  ];
+
+  const lines = oneDay.reduce((prev, cur) => {
+      const percent = cur.commits / sum * 100;
+      const line = [
+          `${cur.label}`.padEnd(10),
+          `${cur.commits.toString().padStart(5)} commits`.padEnd(14),
+          generateBarChart(percent, 11),
+          String(percent.toFixed(1)).padStart(5) + '%',
+      ];
+
+      return [...prev, line.join(' ')];
+  }, []);
+
+  const json = {
+      header: (commitDateTotal.morning + commitDateTotal.daytime) > (commitDateTotal.evening + commitDateTotal.midnight) ? 'I\'m an early 🐤' : 'I\'m a night 🦉',
+      lines: lines,
+  };
+
+  return json.lines.join('\n');
+}
 
 export const loadUserStat = (stats: UserStatsVO): string => {
-
-  const iconUrl = 'https://github.com/linyimin-bupt/linyimin-bupt/blob/main';
   
   const template = [
     { label: 'Total Stars', count: stats.stars, icon: `${iconUrl}/icons/total-star.svg` },

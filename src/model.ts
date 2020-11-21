@@ -52,3 +52,38 @@ export interface MostUsedLanguages {
     }
   }
 }
+
+
+export interface OwnerRepository {
+  data: {
+    user: {
+      repositoriesContributedTo: {
+        nodes: {
+          isFork: boolean,
+          name: string,
+          owner: {
+            login: string
+          }
+        }[]
+      }
+    }
+  }
+}
+
+export interface CommitedDate {
+  data: {
+    repository: {
+      ref: {
+        target: {
+          history: {
+            edges: {
+              node: {
+                committedDate: string
+              }
+            }[]
+          }
+        }
+      }
+    }
+  }
+}
