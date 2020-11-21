@@ -59,9 +59,6 @@ export const loadCommitStats = async (commitedStats: CommitedDate[]): Promise<st
     return [...prev, line.join(' ')];
   }, []);
 
-  const header: string = (commitDateTotal.morning + commitDateTotal.daytime) > (commitDateTotal.evening + commitDateTotal.midnight) ? 'I\'m an early 🐤' : 'I\'m a night 🦉';
-  lines.unshift(header);
-
   return lines.join('\n');
 };
 
