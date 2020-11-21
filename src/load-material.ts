@@ -52,7 +52,7 @@ export const loadCommitStats = async (commitedStats: CommitedDate[]): Promise<st
       `<img src='${cur.icon}' height='16px'>`,
       `${cur.label}`.padEnd(8),
       `${cur.commits.toString().padStart(4)} commits`.padEnd(14),
-      generateBarChart(percent, 17),
+      generateBarChart(percent, 15),
       String(percent.toFixed(1)).padStart(5) + '%',
     ];
 
