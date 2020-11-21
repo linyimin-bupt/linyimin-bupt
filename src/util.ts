@@ -8,16 +8,16 @@ import * as path from 'path';
  * clone from https://github.com/matchai/waka-box
  */
 export const generateBarChart = (percent: number, size: number): string => {
-    const syms = '░▏▎▍▌▋▊▉█';
+    const syms = '░█';
 
-    const frac = Math.floor((size * 8 * percent) / 100);
-    const barsFull = Math.floor(frac / 8);
+    const frac = Math.floor((size * 2 * percent) / 100);
+    const barsFull = Math.floor(frac / 2);
     if (barsFull >= size) {
-        return syms.substring(8, 9).repeat(size);
+        return syms.substring(1, 2).repeat(size);
     }
-    const semi = frac % 8;
+    const semi = frac % 2;
 
-    return [syms.substring(8, 9).repeat(barsFull), syms.substring(semi, semi + 1)]
+    return [syms.substring(1, 2).repeat(barsFull), syms.substring(semi, semi + 1)]
         .join('')
         .padEnd(size, syms.substring(0, 1));
 };
