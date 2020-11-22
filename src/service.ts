@@ -180,7 +180,7 @@ export const retrieveRecentlyPush = async(): Promise<string> => {
                     branch: branch.name,
                     changeFiles: branch.target.changedFiles,
                     pushedAt: branch.target.committedDate,
-                    primaryLanguage: repository.primaryLanguage ? repository.primaryLanguage.name : 'null'
+                    primaryLanguage: repository.primaryLanguage ? repository.primaryLanguage.name : 'Text'
                 });
             })
         });
