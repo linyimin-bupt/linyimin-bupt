@@ -14,10 +14,9 @@ jobs:
       - name: install dependency
         run: -|
           npm install
-          npm install -g npx
       - name: Update readme
         run: |-
-          npx ts-node src/index.ts
+          ./node_modules/ts-node/dist/bin.js src/index.ts
           cat README.md
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
