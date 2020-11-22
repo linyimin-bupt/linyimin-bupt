@@ -12,11 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install dependency
-        run: |
+        run: -|
           npm install
+          npm install -g npx
       - name: Update readme
         run: |-
-          ts-node src/index.ts
+          npx ts-node src/index.ts
           cat README.md
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
