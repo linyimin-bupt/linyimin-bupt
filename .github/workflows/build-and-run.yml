@@ -1,0 +1,32 @@
+name: linyimin-bupt action
+on:
+  push:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependency
+        run: |
+          npm install
+      - name: Update readme
+        run: |-
+          ts-node src/index.ts
+          cat README.md
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          TIMEZONE: Asia/Shanghai
+      - name: Commit and push if changed
+        run: |-
+          git diff
+          git config --global user.email "linyimin520812@gmail.com"
+          git config --global user.name "linyimin-bupt"
+          git pull
+          git add -A
+          git commit -m "Updated content" || exit 0
+          git push
