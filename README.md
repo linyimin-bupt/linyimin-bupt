@@ -11,7 +11,7 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                49
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2020)                       368
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2020)                       370
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        68
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               14
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              4
@@ -46,9 +46,9 @@
 <!-- Commit stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'> Morning    25 commits   ██░░░░░░░░░░░░░  10.8%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    79 commits   █████░░░░░░░░░░  34.1%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening   118 commits   ████████░░░░░░░  50.9%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight   10 commits   █░░░░░░░░░░░░░░   4.3%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    79 commits   █████░░░░░░░░░░  34.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening   118 commits   ████████░░░░░░░  51.1%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight    9 commits   █░░░░░░░░░░░░░░   3.9%
 </pre>
 <!-- Commit stats ends -->
 
@@ -59,8 +59,8 @@
 
 <!-- Recent Pushed starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> hokage(master)               1 files 11/23/2020
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files 11/23/2020
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> hokage(master)               1 files 11/24/2020
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files 11/24/2020
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> linyimin.github.io(master)  93 files 11/14/2020
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/text-original-wordmark.svg' height='16px' width='16px'> ideas(master)                1 files  6/27/2020
 </pre>
