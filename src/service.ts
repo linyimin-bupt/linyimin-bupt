@@ -116,7 +116,7 @@ export const retriveUserStats = async(): Promise<string> => {
         const userInfo = await retrieveUserInfo();
         const { username } = userInfo;
 
-        const res = await query(createUserStatsQuery(username));
+        const res = await query(createUserStatsQuery(username, new Date(new Date().getFullYear().toString()).toISOString()));
         if (!res || !res.data) return null;
         const data: UserStats = res.data as UserStats;
 

@@ -71,12 +71,12 @@ export const createRepositoriesCommitQuery = (username: string) => `
   }
 `;
 
-export const createUserStatsQuery = (username: string) => `
+export const createUserStatsQuery = (username: string, from: string) => `
   query {
     user(login: "${username}") {
       name
       login
-      contributionsCollection {
+      contributionsCollection(from: "${from}") {
         totalCommitContributions
       }
       repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
