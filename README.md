@@ -1,6 +1,8 @@
 # Hello,World!
 
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/about-dot-me.svg' width="36"/> <font size=4.5>Hi，我是 linyimin，目前是杭州一家互联网公司的java开发工程师，也会写点JavaScript，空闲喜欢在github上找点有意思的项目跑跑 ，喜欢开源分享，**以下内容通过 <a href="https://github.com/linyimin-bupt/linyimin-bupt/actions" target="_blank">linyimin-bupt/actions</a> 每日自动更新**；</font>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/about-dot-me.svg' width="36"/> <font size=4.5>Hi，我是 linyimin，目前是杭州一家互联网公司的java开发工程师，也会写点JavaScript，空闲喜欢在github上找点有意思的项目跑跑 ，喜欢开源分享，**以下内容通过 <a href="https://github.com/linyimin-bupt/linyimin-bupt/actions" target="_blank">linyimin-bupt/actions</a> 每日自动更新**，本地运行命令：`GH_TOKEN=XXX ts-node src/index.ts`；</font>
+
+
 
 <table style="table-layout:fixed;width: 100%;">
 <tr>
