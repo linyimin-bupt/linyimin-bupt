@@ -13,7 +13,7 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                54
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2021)                       386
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2021)                       398
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        69
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               14
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              4
@@ -28,7 +28,7 @@
 
 <!-- Most Used Language starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> TypeScript       █████░░░░░░░░░░░░░░░░  25.5%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> TypeScript       █████░░░░░░░░░░░░░░░░  25.6%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> CSS              █████░░░░░░░░░░░░░░░░  25.4%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> Java             █████░░░░░░░░░░░░░░░░  24.5%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/html-original-wordmark.svg' height='16px' width='16px'> HTML             ███░░░░░░░░░░░░░░░░░░  12.9%
@@ -48,9 +48,9 @@
 <!-- Commit stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'> Morning    27 commits   ██░░░░░░░░░░░░░  14.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    83 commits   ██████░░░░░░░░░  43.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening    54 commits   ████░░░░░░░░░░░  28.0%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight   29 commits   ██░░░░░░░░░░░░░  15.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    84 commits   ███████░░░░░░░░  43.5%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening    51 commits   ████░░░░░░░░░░░  26.4%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight   31 commits   ██░░░░░░░░░░░░░  16.1%
 </pre>
 <!-- Commit stats ends -->
 
@@ -61,8 +61,8 @@
 
 <!-- Recent Pushed starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> hokage(master)               4 files  6/11/2021
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files  6/11/2021
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> hokage(master)               4 files  6/12/2021
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files  6/12/2021
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> linyimin.github.io(master)  93 files 11/14/2020
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/text-original-wordmark.svg' height='16px' width='16px'> ideas(master)                1 files  6/27/2020
 </pre>
