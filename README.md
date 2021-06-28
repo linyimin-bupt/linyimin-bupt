@@ -13,11 +13,11 @@
 <!-- github stats starts -->
 <pre>
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-star.svg' height='16px'> Total Stars                                54
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2021)                       456
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-commits.svg' height='16px'> Total Commits(2021)                       465
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-prs.svg' height='16px'> Total Pull Requests                        69
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/total-issue.svg' height='16px'> Total Issues                               14
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Contributed To                              4
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Total Repositories                         95
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/contributed-to.svg' height='16px'> Total Repositories                         96
 </pre>
 <!-- github stats ends -->
 
@@ -28,12 +28,12 @@
 
 <!-- Most Used Language starts -->
 <pre>
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> Java             ██████░░░░░░░░░░░░░░░  26.3%
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> TypeScript       █████░░░░░░░░░░░░░░░░  25.8%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> Java             █████░░░░░░░░░░░░░░░░  25.8%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> CSS              █████░░░░░░░░░░░░░░░░  24.6%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/html-original-wordmark.svg' height='16px' width='16px'> HTML             ███░░░░░░░░░░░░░░░░░░  12.5%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/javascript-original-wordmark.svg' height='16px' width='16px'> JavaScript       ██░░░░░░░░░░░░░░░░░░░   7.6%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/c-original-wordmark.svg' height='16px' width='16px'> C                █░░░░░░░░░░░░░░░░░░░░   3.7%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> CSS              █████░░░░░░░░░░░░░░░░  24.4%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/html-original-wordmark.svg' height='16px' width='16px'> HTML             ███░░░░░░░░░░░░░░░░░░  12.4%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/javascript-original-wordmark.svg' height='16px' width='16px'> JavaScript       ██░░░░░░░░░░░░░░░░░░░   7.5%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/c-original-wordmark.svg' height='16px' width='16px'> C                █░░░░░░░░░░░░░░░░░░░░   3.6%
 </pre>
 <!-- Most Used Language ends -->
 
@@ -47,10 +47,10 @@
 
 <!-- Commit stats starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'> Morning    31 commits   ██░░░░░░░░░░░░░  15.9%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    69 commits   █████░░░░░░░░░░  35.4%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening    49 commits   ████░░░░░░░░░░░  25.1%
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight   46 commits   ████░░░░░░░░░░░  23.6%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/morning.svg' height='16px'> Morning    30 commits   ██░░░░░░░░░░░░░  15.2%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/daytime.svg' height='16px'> Daytime    69 commits   █████░░░░░░░░░░  35.0%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/evening.svg' height='16px'> Evening    52 commits   ████░░░░░░░░░░░  26.4%
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/midnight.svg' height='16px'> Midnight   46 commits   ████░░░░░░░░░░░  23.4%
 </pre>
 <!-- Commit stats ends -->
 
@@ -61,8 +61,8 @@
 
 <!-- Recent Pushed starts -->
 <pre>
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> hokage(master)               4 files  6/26/2021
-<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files  6/26/2021
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/java-original-wordmark.svg' height='16px' width='16px'> hokage(master)              13 files  6/27/2021
+<img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/typescript-original-wordmark.svg' height='16px' width='16px'> linyimin-bupt(main)          1 files  6/27/2021
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/css-original-wordmark.svg' height='16px' width='16px'> linyimin.github.io(master)  93 files 11/14/2020
 <img src='https://github.com/linyimin-bupt/linyimin-bupt/blob/main/icons/text-original-wordmark.svg' height='16px' width='16px'> ideas(master)                1 files  6/27/2020
 </pre>
